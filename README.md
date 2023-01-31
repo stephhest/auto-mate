@@ -1,91 +1,54 @@
-# CarCar
+# CarCar Auto Management App
 
-Team:
-* Stephanie Hestilow - Sales
-* Kayre Santos - Service
+## Team
+* Stephanie Hestilow - Full Stack Software Engineer, Sales Microservice 
+* Kayre Santos - Full Stack Software Engineer, Service Microservice
 
 ## Instructions to run project
-1. Fork and clone the project from: https://gitlab.com/kayresantos/project-beta
+1. Fork and clone the project from: https://gitlab.com/stephaniehestilow/car-car
 2. Copy the clone with the HTTPS link
 3. Open up a command terminal and cd into your project directory
 In your command terminal type:
 
-    - `git clone <HTTPS Link>`
+    - `git clone <<HTTPS Link>>`
     - `docker volume create beta-data` (this command creates the data for docker)
     - `docker-compose build` (this command builds the containers for docker)
     - `docker-compose up` (this command runds the docker containers)
 
 4. Open up Docker Desktop and ensure all containers are running without errors
 5. Create data Insomnia using the routes and test data below (see CRUD ROUTE DOCUMENTATION and TEST DATA)
-6. To see and engage with the app, open up google chrome go to http://localhost:3000
+6. To see and engage with the app, launch Chrome and go to http://localhost:3000
 
 ## Design
 ![CarCar Design](/images/CarCarDiagram.png "
 CarCar Design")
 
 ## Service microservice
-- The Services microservice includes:
-1. TechnicianForm
-    - create a form that allows a person to enter a technician's name and employee number
+The Services microservice includes:
+1. Technician Form - A form that allows a person to enter a technician's name and employee number
 
-2. ServiceAppointmentForm
-    - create a form that allows a service concierge to enter
-        -the VIN of the vehicle
-        -the name of the person to whom the vehicle belongs
-        -the date and time of the appointment
-        -the assigned technician
-        -a reason for the service appointment
-            For example: "oil change" or "routine maintenance"
-    -  When the form is submitted, the service appointment should be saved in the application
-    -  create a link in the navbar to get to the Enter a service appointment form.
+2. Service Appointment Form - A form that allows a service member to add a new service appointment to the database
 
-3. List of Appointments
-    - get the list of service appointments
-        -Vin
-        -Customer Name/ Owner Name
-        -date and time of the appointment
-        -the assigned technician's name
-        -the reason for the service
-        - Cancel button if pressed will delete the appointment from the list
-        - Finished button if pressed will delete the appointment from the list
-        - VIP status(If vehicle was purchased from inventory)
+3. List of Appointments - A page that lists all service appointments in the database
 
-4. ServiceHistoryForm
-    - A page that has an input that allows someone to type in a VIN number
-    - fetch all of the service appointments associated with a VIN number
+4. Service History - A page that lists all service appointments associated with a provided VIN number
 
 ## Sales microservice
-- Models
-    - AutomobileVO -> VALUE OBJECT, represents a copy of an existing automobile from Inventory
-        - import_href: string
-        - color: string
-        - year: integer
-        - vin: string (unique)
-        - manufacturer_name: string
-        - model_name: string
-        - sold: bool (default set to False)
-    - SalesPerson -> describes a specific sales person
-        - name: string
-        - employee_number: integer (unique)
-    - Customer -> describes a specific potential customer
-        - name: string
-        - address: string
-        - phone: string
-    - Sale -> describes a specific sale record
-        - sale_price: integer
-        - automobile: FOREIGN KEY -> AutomobileVO
-        - sales_person: FOREIGN KEY -> SalesPerson
-        - customer: FOREIGN KEY -> Customer
-- Poller
-    - Consumer will poll Automobile data in the inventory api.  For each Automobile object in inventory, the Sales poller will either update or create a new "AutomobileVO" with the corresponding data, using "create_or_update()" method.
-    - Poller will poll URL http://inventory-api:8000/api/automobiles/
-- Forms
-    - Create Customer -> Adds a new customer in the database
-    - Create Sales Person -> Adds a new sales person in the database (must have unique employee number)
-    - Create Sale Record -> Adds a new sale record in the database (associated autoVO must be NOT be sold)
-- List Views
-    - List All Sales -> Shows all existing sales in the database
-    - List Sales Person History -> Shows all sales by a selected sales person
+The Sales microservice includes:
+1. Customer Form - A form that allows a sales member to add a new customer to the database
+    
+2. Sales Person Form - A form that allows a sales member to add a new sales person to the database
+
+3. Sales Record Form - A form that allows a sales member to add a new sale record to the database
+
+4. List of Sales - A page that lists all completed sales in the database
+
+5. Sales Person History - A page that lists all sales made by a selected sales person
+
+
+## Pollers
+Each microservice consumer will poll Automobile data in the inventory api.  For each Automobile object in inventory, the Service / Sales pollers will either update or create a new "AutomobileVO" with the corresponding data, using "create_or_update()" method.
+Pollers will poll URL http://inventory-api:8000/api/automobiles/
 
 
 
