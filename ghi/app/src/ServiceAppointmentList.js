@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
 class ServiceAppointmentList extends React.Component {
     constructor(props) {
@@ -42,7 +41,8 @@ class ServiceAppointmentList extends React.Component {
     render() {
         return (
             <>
-            <table className="table table-striped">
+            <br/>
+            <table className="table table-dark table-striped">
                 <thead>
                     <tr>
                         <th>VIN</th>
@@ -73,7 +73,7 @@ class ServiceAppointmentList extends React.Component {
                                 <td>{appointment.technician.name}</td>
                                 <td>{appointment.reason}</td>
                                 <td><button onClick={() => this.handleDelete(appointment.id)} className="btn btn-danger">Cancel</button></td>
-                                <td><button onClick={() => this.handleDelete(appointment.id)} className="btn btn-success">Finished</button></td>
+                                <td><button onClick={() => this.handleDelete(appointment.id)} className="btn btn-dark">Finished</button></td>
                                 <td>{vip}</td>
                             </tr>
                         );

@@ -48,12 +48,13 @@ const AutosList = () => {
                 </div>
             </form>
             <Link to="/automobiles/new">
-                <button id="addbutton" className="btn btn-success">Add Automobile</button>
+                <button id="addbutton" className="btn btn-dark">Add Automobile</button>
             </Link>
         </div>
 
             <h1>Automobile Inventory</h1>
-            <table className="table table-striped">
+            <br/>
+            <table className="table table-dark table-striped">
                 <thead>
                     <tr>
                         <th>VIN</th>

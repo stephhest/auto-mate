@@ -130,7 +130,7 @@ const SaleRecordForm = () => {
                   <input onChange={handleChangeSalePrice} value={sale_price}  placeholder="sale price" required type="number" name="sale_price" id="sale_price" className="form-control" />
                   <label htmlFor="sale_price">Enter Sales Price</label>
                 </div>
-                <button className="btn btn-primary">Create</button>
+                <button className="btn btn-dark">Create</button>
               </form>
             </div>
           </div>

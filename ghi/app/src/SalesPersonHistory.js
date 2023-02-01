@@ -50,7 +50,8 @@ const SalesPersonHistory = () => {
             </Link>
         </div>
         <h1>Sales Person History</h1>
-        <table className="table table-striped">
+        <br/>
+        <table className="table table-dark table-striped">
             <thead>
                 <tr>
                     <th>Sales Person</th>

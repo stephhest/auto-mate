@@ -1,7 +1,7 @@
-# CarCar Auto Management App
+# AutoMate Web Application
 
 ## Team
-* Stephanie Hestilow - Full Stack Software Engineer, Sales Microservice 
+* Stephanie Hestilow - Full Stack Software Engineer, Sales Microservice
 * Kayre Santos - Full Stack Software Engineer, Service Microservice
 
 ## Instructions to run project
@@ -20,8 +20,8 @@ In your command terminal type:
 6. To see and engage with the app, launch Chrome and go to http://localhost:3000
 
 ## Design
-![CarCar Design](/images/CarCarDiagram.png "
-CarCar Design")
+![AutoMate Design](/images/auto-mate-diagram.png "
+AutoMate Design")
 
 ## Service microservice
 The Services microservice includes:
@@ -36,7 +36,7 @@ The Services microservice includes:
 ## Sales microservice
 The Sales microservice includes:
 1. Customer Form - A form that allows a sales member to add a new customer to the database
-    
+
 2. Sales Person Form - A form that allows a sales member to add a new sales person to the database
 
 3. Sales Record Form - A form that allows a sales member to add a new sale record to the database
@@ -151,4 +151,3 @@ Create Sale Record
     "customer": 1
 }
 ```
-

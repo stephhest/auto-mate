@@ -43,7 +43,7 @@ const ManufacturerForm = () => {
                             <input onChange={handleChangeName} value={name} placeholder="name" required type="text" name="name" id="name" className="form-control" />
                             <label htmlFor="name">Name</label>
                         </div>
-                        <button className="btn btn-primary">Create</button>
+                        <button className="btn btn-dark">Create</button>
                     </form>
                 </div>
             </div>

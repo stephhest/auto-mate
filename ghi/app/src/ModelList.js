@@ -19,10 +19,11 @@ const ModelList = () => {
             <div id="heading">
                 <h1>Vehicle Models</h1>
                 <Link to="/models/new">
-                    <button id="addbutton" className="btn btn-success">Add Vehicle Model</button>
+                    <button id="addbutton" className="btn btn-dark">Add Vehicle Model</button>
                 </Link>
             </div>
-            <table className="table table-striped">
+            <br/>
+            <table className="table table-dark table-striped">
                 <thead>
                     <tr>
                         <th>Name</th>

@@ -54,7 +54,7 @@ const TechnicianForm = () => {
                             <input onChange={handleChangeEmployeeNumber} value={employeeNumber} placeholder="employee_number" required type="text" name="employee_number" id="employee_number" className="form-control" />
                             <label htmlFor="employeeNumber">Employee Number</label>
                         </div>
-                        <button className="btn btn-primary">Create</button>
+                        <button className="btn btn-dark">Create</button>
                     </form>
                 </div>
             </div>

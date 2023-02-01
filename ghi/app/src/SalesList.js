@@ -23,10 +23,11 @@ const SalesList = () => {
         <div id="heading">
             <h1>All Sales</h1>
             <Link to="/sales/new">
-                    <button id="addbutton" className="btn btn-success">Create Sale Record</button>
+                    <button id="addbutton" className="btn btn-dark">Create Sale Record</button>
             </Link>
         </div>
-        <table className="table table-striped">
+        <br/>
+        <table className="table table-dark table-striped">
             <thead>
                 <tr>
                     <th>Sales Person</th>

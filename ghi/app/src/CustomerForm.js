@@ -69,7 +69,7 @@ const CustomerForm = () => {
                             <input onChange={handleChangePhone} value={phone} placeholder="phone" required type="text" name="phone" id="phone" className="form-control" />
                             <label htmlFor="phone">Phone Number</label>
                         </div>
-                        <button className="btn btn-primary">Create</button>
+                        <button className="btn btn-dark">Create</button>
                     </form>
                 </div>
             </div>

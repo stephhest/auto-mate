@@ -25,7 +25,6 @@ def poll():
         print('Service poller polling for data')
         try:
             get_auto()
-            print("this is working")
         except Exception as e:
             print(e, file=sys.stderr)
         time.sleep(60)

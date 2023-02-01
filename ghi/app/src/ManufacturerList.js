@@ -19,10 +19,11 @@ const ManufacturerList = () => {
             <div id="heading">
                 <h1>Manufacturer List</h1>
                 <Link to="/manufacturers/new">
-                    <button id="addbutton" className="btn btn-success">Add Manufacturer</button>
+                    <button id="addbutton" className="btn btn-dark">Add Manufacturer</button>
                 </Link>
             </div>
-            <table className="table table-striped">
+            <br/>
+            <table className="table table-dark table-striped">
                 <thead>
                     <tr>
                         <th>Manufacturer</th>

@@ -37,7 +37,7 @@ const AutoForm = () => {
             .then((response) => {
               if (!response.ok) {
                   alert('Submission Error: VIN must be unique');
-              } 
+              }
             })
             .then(() => {
                 setColor('');
@@ -97,7 +97,7 @@ const AutoForm = () => {
                     })}
                   </select>
                 </div>
-                <button className="btn btn-primary">Create</button>
+                <button className="btn btn-dark">Create</button>
               </form>
             </div>
           </div>

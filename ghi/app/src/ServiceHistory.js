@@ -47,7 +47,8 @@ class ServiceHistory extends React.Component {
             <p></p>
             <div className= "service list">
                 <h2> Service History</h2>
-                <table className="table table-striped">
+                <br/>
+                <table className="table table-dark table-striped">
                     <thead>
                     <tr>
                         <th>VIN</th>
