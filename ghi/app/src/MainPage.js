@@ -10,9 +10,11 @@ function MainPage() {
           The premiere solution for automobile dealership
           management
         </p>
+        <div className="carousel-container">
+          < HomeCarousel />
+        </div>
       </div>
     </div>
-    < HomeCarousel />
     </>
   );
 }

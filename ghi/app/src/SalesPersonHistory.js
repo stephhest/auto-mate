@@ -46,7 +46,7 @@ const SalesPersonHistory = () => {
                 </div>
             </form>
             <Link to="/salespeople/new">
-                <button id="addbutton" className="btn btn-success">Add Sales Person</button>
+                <button id="addbutton" className="btn btn-dark">Add Sales Person</button>
             </Link>
         </div>
         <h1>Sales Person History</h1>

@@ -26,13 +26,31 @@ function Nav() {
               </a>
               <ul style={{display: inventoryMenuVisible ? 'block' : 'none'}}>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/automobiles">Automobiles</Link>
+                  <Link
+                    className="nav-link"
+                    to="/automobiles"
+                    onClick={() => setInventoryMenuVisible(!inventoryMenuVisible)}
+                  >
+                    Automobiles
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/manufacturers">Manufacturers</Link>
+                  <Link
+                    className="nav-link"
+                    to="/manufacturers"
+                    onClick={() => setInventoryMenuVisible(!inventoryMenuVisible)}
+                  >
+                    Manufacturers
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/models">Vehicle Models</Link>
+                  <Link
+                    className="nav-link"
+                    to="/models"
+                    onClick={() => setInventoryMenuVisible(!inventoryMenuVisible)}
+                  >
+                    Vehicle Models
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -43,16 +61,40 @@ function Nav() {
               </a>
               <ul style={{display: serviceMenuVisible ? 'block' : 'none'}}>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/technicians/new">Add Technician</Link>
+                  <Link
+                    className="nav-link"
+                    to="/technicians/new"
+                    onClick={() => setServiceMenuVisible(!serviceMenuVisible)}
+                  >
+                    Add Technician
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="appointments/new">New Appointment</Link>
+                  <Link
+                    className="nav-link"
+                    to="appointments/new"
+                    onClick={() => setServiceMenuVisible(!serviceMenuVisible)}
+                  >
+                    New Appointment
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/appointments">All Appointments</Link>
+                  <Link
+                    className="nav-link"
+                    to="/appointments"
+                    onClick={() => setServiceMenuVisible(!serviceMenuVisible)}
+                  >
+                    All Appointments
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/service/vin">Service History</Link>
+                  <Link
+                    className="nav-link"
+                    to="/service/vin"
+                    onClick={() => setServiceMenuVisible(!serviceMenuVisible)}
+                  >
+                    Service History
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -63,19 +105,49 @@ function Nav() {
               </a>
               <ul style={{display: salesMenuVisible ? 'block' : 'none'}}>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/salespeople/new">Add Sales Person</Link>
+                  <Link
+                    className="nav-link"
+                    to="/salespeople/new"
+                    onClick={() => setSalesMenuVisible(!salesMenuVisible)}
+                  >
+                    Add Sales Person
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/customers/new">Add Customer</Link>
+                  <Link
+                    className="nav-link"
+                    to="/customers/new"
+                    onClick={() => setSalesMenuVisible(!salesMenuVisible)}
+                  >
+                    Add Customer
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/sales/new">New Sale Record</Link>
+                  <Link
+                    className="nav-link"
+                    to="/sales/new"
+                    onClick={() => setSalesMenuVisible(!salesMenuVisible)}
+                  >
+                    New Sale Record
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/sales">All Sales</Link>
+                  <Link
+                    className="nav-link"
+                    to="/sales"
+                    onClick={() => setSalesMenuVisible(!salesMenuVisible)}
+                  >
+                    All Sales
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/salespeople">Sales Person History</Link>
+                  <Link
+                    className="nav-link"
+                    to="/salespeople"
+                    onClick={() => setSalesMenuVisible(!salesMenuVisible)}
+                  >
+                    Sales Person History
+                  </Link>
                 </li>
               </ul>
             </li>
